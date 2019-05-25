@@ -1,7 +1,8 @@
-# My_Readme
+# Read Me
 
 These are my attempts at solving the PyBites challenges... only the first 2 solved so far.
 
+# Read Them
 # PyBites Blog Code Challenges
 
 > The best way to learn to code is by doing it. PyBites Code Challenges == accelerated learning, but also fun and collaboration endorsing.
