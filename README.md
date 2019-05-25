@@ -1,6 +1,6 @@
 # Read Me
 
-These are my attempts at solving the PyBites challenges... only the first 2 solved so far.
+These are my attempts at solving the PyBites challenges.  Only the first 2 solved so far, Twitter scares me.
 
 # Read Them
 # PyBites Blog Code Challenges
