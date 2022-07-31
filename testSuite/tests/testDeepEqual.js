@@ -2,7 +2,7 @@
  * Tests for helper functions used in runTestSuite.
  */
 
-const { deepEqual, runSimpleTestSuite } = require('./index.js');
+const { deepEqual, runSimpleTestSuite } = require('../index.js');
 const { arrayEqualData, deepEqualData } = require('./data.js');
 
 function runAllTests() {
