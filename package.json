@@ -1,0 +1,22 @@
+{
+  "name": "challenges",
+  "version": "0.0.1",
+  "description": "Repo for coding challenges from CodeWars, LeetCode, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnloughead/challenges.git"
+  },
+  "author": "Kevin Loughead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvnloughead/challenges/issues"
+  },
+  "homepage": "https://github.com/kvnloughead/challenges#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
