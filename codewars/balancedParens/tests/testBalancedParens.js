@@ -1,5 +1,5 @@
 const { balancedParens } = require('../index.js');
-const { runTestSuite } = require('../../../tests/index.js');
+const { runTestSuite } = require('../../../testSuite/index.js');
 
 const testData = [
   {
