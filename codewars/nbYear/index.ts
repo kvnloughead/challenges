@@ -7,7 +7,7 @@ export const nbYear = (
   let _p = p0;
   let y = 0;
   while (_p < p) {
-    _p = _p + _p * percent + aug;
+    _p = _p + Math.ceil((_p * percent) / 100) + aug;
     y += 1;
   }
   return y;
