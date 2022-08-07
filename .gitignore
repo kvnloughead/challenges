@@ -1,3 +1,4 @@
 temp.*
 *.bak.*
 node_modules
+build
