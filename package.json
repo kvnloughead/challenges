@@ -4,7 +4,8 @@
   "description": "Repo for coding challenges from CodeWars, LeetCode, etc.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "tsc && jest",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.firstSuch = exports.getItemCounts = void 0;
 /**
  * Returns a hash of the counts of the items in nums.
  *
@@ -12,6 +14,7 @@ function getItemCounts(nums) {
     });
     return res;
 }
+exports.getItemCounts = getItemCounts;
 /**
  * Returns the first matching element.
  *
@@ -26,4 +29,4 @@ function firstSuch(arr, callback) {
     }
     return null;
 }
-module.exports = { firstSuch, getItemCounts };
+exports.firstSuch = firstSuch;
