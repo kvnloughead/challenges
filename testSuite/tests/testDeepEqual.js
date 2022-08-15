@@ -2,8 +2,8 @@
  * Tests for helper functions used in runTestSuite.
  */
 
-const { deepEqual, runSimpleTestSuite } = require('../index.js');
-const { arrayEqualData, deepEqualData } = require('./data.js');
+const { deepEqual, runSimpleTestSuite } = require("../index.js");
+const { arrayEqualData, deepEqualData } = require("./data.js");
 
 function runAllTests() {
   let failing = 0;
@@ -12,9 +12,9 @@ function runAllTests() {
   console.log(
     `\n  ${
       failing === 0
-        ? 'All tests for all test suites PASS'
-        : `${failing} test${failing > 1 ? 's' : ''} FAILS`
-    }\n`,
+        ? "All tests for all test suites PASS"
+        : `${failing} test${failing > 1 ? "s" : ""} FAILS`
+    }\n`
   );
 }
 

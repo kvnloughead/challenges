@@ -2,10 +2,10 @@
  * Better than nothing testing for runTestSuite.
  */
 
-const { exec } = require('child_process');
+const { exec } = require("child_process");
 
 const process =
-  'node ../../codewars/balancedParens/tests/testBalancedParens.js';
+  "node ../../codewars/balancedParens/tests/testBalancedParens.js";
 
 exec(process, (error, stdout, stderr) => {
   if (error) {

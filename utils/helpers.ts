@@ -11,7 +11,7 @@ interface ItemCounts {
 export function getItemCounts(nums: number[]): ItemCounts {
   const res: ItemCounts = {};
   nums.forEach((n) => {
-    typeof res[n] !== 'undefined' ? res[n]++ : (res[n] = 1);
+    typeof res[n] !== "undefined" ? res[n]++ : (res[n] = 1);
   });
   return res;
 }
@@ -38,9 +38,9 @@ export function firstSuch(arr: any[], callback: (value: any) => Boolean): any {
  */
 export function isValid(s: string) {
   const closers: { [key: string]: string } = {
-    ']': '[',
-    '}': '{',
-    ')': '(',
+    "]": "[",
+    "}": "{",
+    ")": "(",
   };
   const stack = [];
   for (let i = 0; i < s.length; i++) {

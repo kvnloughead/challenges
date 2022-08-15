@@ -1,6 +1,6 @@
-const { nbYear } = require('./index');
+const { nbYear } = require("./index");
 
-test('basic tests', () => {
+test("basic tests", () => {
   expect(nbYear(1500, 5, 100, 1674)).toBe(1);
   expect(nbYear(1500, 5, 100, 1675)).toBe(1);
   expect(nbYear(1500, 5, 100, 1676)).toBe(2);

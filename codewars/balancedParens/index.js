@@ -13,10 +13,10 @@ function generateParens(n, left, right, s, res) {
     return;
   }
   if (left < n) {
-    generateParens(n, left + 1, right, s + '(', res);
+    generateParens(n, left + 1, right, s + "(", res);
   }
   if (right < left) {
-    generateParens(n, left, right + 1, s + ')', res);
+    generateParens(n, left, right + 1, s + ")", res);
   }
 }
 
@@ -29,7 +29,7 @@ function generateParens(n, left, right, s, res) {
  */
 function balancedParens(n) {
   const res = [];
-  generateParens(n, 0, 0, '', res);
+  generateParens(n, 0, 0, "", res);
   return res;
 }
 

@@ -20,7 +20,7 @@ function countOpenParens(s) {
   let count = 0;
   const openParens = [];
   for (let i = 0; i < s.length; i++) {
-    count += s[i] === '(' ? 1 : -1;
+    count += s[i] === "(" ? 1 : -1;
     openParens.push(count);
   }
   return openParens;

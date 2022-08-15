@@ -2,7 +2,7 @@ export const nbYear = (
   p0: number,
   percent: number,
   aug: number,
-  p: number,
+  p: number
 ): number => {
   let _p = p0;
   let y = 0;

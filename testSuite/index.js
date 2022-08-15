@@ -11,7 +11,7 @@ function deepEqual(x, y) {
     yKeys = Object.keys(y),
     tx = typeof x,
     ty = typeof y;
-  return x && y && tx === 'object' && tx === ty
+  return x && y && tx === "object" && tx === ty
     ? x.length === y.length &&
         xKeys.length === yKeys.length &&
         xKeys.every((key) => deepEqual(x[key], y[key]))
@@ -42,14 +42,14 @@ function runSimpleTestSuite(func, data, verbose = false) {
       console.log(`  FAIL - Expected ${expected}, Actual: ${actual}`);
       failing++;
     }
-    if (verbose) console.log('\n');
+    if (verbose) console.log("\n");
   });
   console.log(
     `\n  ${
       failing === 0
-        ? 'All tests PASS'
-        : `${failing} test${failing > 1 ? 's' : ''} FAILS`
-    }\n`,
+        ? "All tests PASS"
+        : `${failing} test${failing > 1 ? "s" : ""} FAILS`
+    }\n`
   );
   return failing;
 }
@@ -76,14 +76,14 @@ function runTestSuite(func, data, verbose = false) {
       console.log(`  FAIL - Expected ${expected}, Actual: ${actual}`);
       failing++;
     }
-    if (verbose) console.log('\n');
+    if (verbose) console.log("\n");
   });
   console.log(
     `\n  ${
       failing === 0
-        ? 'All tests PASS'
-        : `${failing} test${failing > 1 ? 's' : ''} FAILS`
-    }\n`,
+        ? "All tests PASS"
+        : `${failing} test${failing > 1 ? "s" : ""} FAILS`
+    }\n`
   );
   return failing;
 }
