@@ -76,3 +76,20 @@ export function generate(numRows: number): number[][] {
   }
   return res;
 }
+
+/**
+ * Returns s1 % s2, where s1 is a string representing an arbitrarily
+ * large integer number.
+ *
+ * Works because modulus is distributive over addition. So
+ *        (a + b) % m = ((a % m) + (b % m)) % m
+ * For instance,
+ *        (100 + 20 + 3) % 7 = ((100 % 7) + (20 % 7) + (3 % 7)) % 7
+ *                           = (2 + 6 + 3) % 7
+ *                           = 4
+ */
+export function modulus(divident: string, divisor: number) {
+  return Array.from(divident)
+    .map((d) => parseInt(d) % divisor)
+    .reduce((prev, curr) => (prev * 10 + curr) % divisor, 0);
+}
