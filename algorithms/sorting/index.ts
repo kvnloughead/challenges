@@ -60,11 +60,3 @@ export function insertionSort<T extends unknown>(
   }
   return arr;
 }
-
-export function merge<T extends unknown>(arr1: T[], arr2: T[]): T[] {
-  return [];
-}
-
-export function mergeSort<T extends unknown>(arr: T[]): T[] {
-  return arr;
-}

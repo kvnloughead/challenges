@@ -1,4 +1,4 @@
-import { mergeSort } from "..";
+import { mergeSort } from ".";
 
 const { testSortingFunction } = require("../../../utils/testHelpers");
 

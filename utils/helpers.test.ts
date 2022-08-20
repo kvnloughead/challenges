@@ -1,3 +1,5 @@
+import { moveZeroes } from "./helpers";
+
 const {
   getItemCounts,
   isValid,
@@ -6,6 +8,21 @@ const {
   setsAreEqual,
   isAnagram,
 } = require("./helpers");
+
+test("moveZeroes", () => {
+  const tests = [
+    [0, 0, 1],
+    [1, 0, 1],
+  ];
+  const expected = [
+    [1, 0, 0],
+    [1, 1, 0],
+  ];
+  tests.forEach((test, i) => {
+    moveZeroes(test);
+    expect(tests[i]).toStrictEqual(expected[i]);
+  });
+});
 
 test("isAnagram", () => {
   expect(isAnagram("foobar", "barfoo")).toBe(true);

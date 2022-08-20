@@ -108,16 +108,29 @@ export function modulus(divident: string, divisor: number) {
     .reduce((prev, curr) => (prev * 10 + curr) % divisor, 0);
 }
 
-export function containsDuplicate(nums: number[]): boolean {
-  return nums.find((n, i) => i != nums.indexOf(n)) === undefined ? false : true;
-}
-
+/** Returns true if the sets are equal. */
 export function setsAreEqual(s1: Set<unknown>, s2: Set<unknown>) {
   return s1.size == s2.size && [...s1].every((x) => s2.has(x));
 }
 
+export function containsDuplicate(nums: number[]): boolean {
+  return nums.find((n, i) => i != nums.indexOf(n)) === undefined ? false : true;
+}
+
+/** Returns true if the strings are anagrams. */
 export function isAnagram(s: string, t: string): boolean {
   if (s.length != t.length) return false;
   const [_s, _t] = [[...s].sort(), [...t].sort()];
   return _s.every((x, i) => x === _t[i]);
+}
+
+/** Shifts all zeros to the end of the array of numbers. */
+export function moveZeroes(nums: number[]): void {
+  let count = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] != 0) nums[count++] = nums[i];
+  }
+  while (count < nums.length) {
+    nums[count++] = 0;
+  }
 }
