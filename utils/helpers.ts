@@ -1,17 +1,31 @@
 interface ItemCounts {
-  [n: number]: number;
+  [k: string | number]: number;
 }
 
+// /**
+//  * Returns a hash of the counts of the items in nums.
+//  *
+//  * @param {number[]} nums - an array of numbers
+//  * @returns {ItemCounts}
+//  */
+// export function getItemCounts(nums: number[]): ItemCounts {
+//   const res: ItemCounts = {};
+//   nums.forEach((n) => {
+//     typeof res[n] !== "undefined" ? res[n]++ : (res[n] = 1);
+//   });
+//   return res;
+// }
+
 /**
- * Returns a hash of the counts of the items in nums.
+ * Returns a hash of the counts of the elements in an array.
  *
- * @param {number[]} nums - an array of numbers
+ * @param {(string | number)[]} arr - an array of primitives
  * @returns {ItemCounts}
  */
-export function getItemCounts(nums: number[]): ItemCounts {
+export function getItemCounts(arr: (string | number)[]): ItemCounts {
   const res: ItemCounts = {};
-  nums.forEach((n) => {
-    typeof res[n] !== "undefined" ? res[n]++ : (res[n] = 1);
+  arr.forEach((a) => {
+    typeof res[a] !== "undefined" ? res[a]++ : (res[a] = 1);
   });
   return res;
 }
@@ -92,4 +106,18 @@ export function modulus(divident: string, divisor: number) {
   return Array.from(divident)
     .map((d) => parseInt(d) % divisor)
     .reduce((prev, curr) => (prev * 10 + curr) % divisor, 0);
+}
+
+export function containsDuplicate(nums: number[]): boolean {
+  return nums.find((n, i) => i != nums.indexOf(n)) === undefined ? false : true;
+}
+
+export function setsAreEqual(s1: Set<unknown>, s2: Set<unknown>) {
+  return s1.size == s2.size && [...s1].every((x) => s2.has(x));
+}
+
+export function isAnagram(s: string, t: string): boolean {
+  if (s.length != t.length) return false;
+  const [_s, _t] = [[...s].sort(), [...t].sort()];
+  return _s.every((x, i) => x === _t[i]);
 }

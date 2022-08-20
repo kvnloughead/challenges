@@ -1,5 +1,4 @@
 const { findOdd } = require("./index");
-const { getItemCounts } = require("../../utils/helpers");
 
 test("basic firstSuch tests", () => {
   expect(findOdd([1, 2, 3, 1])).toBe(2);
